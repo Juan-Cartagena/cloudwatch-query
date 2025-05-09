@@ -1,0 +1,490 @@
+{
+  "/aws/lambda/bm-qrec-api-redeban": [
+    {
+      "@timestamp": "2025-05-08 22:50:32.011",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "REPORT RequestId: 06d25c3a-91e7-43e5-8230-4a46b8c71206\tDuration: 945.62 ms\tBilled Duration: 946 ms\tMemory Size: 1024 MB\tMax Memory Used: 200 MB\t\nXRAY TraceId: 1-681d3536-3e4a67ed728b6c5b58e08ca1\tSampled: true\t\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAQGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:32.011",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "END RequestId: 06d25c3a-91e7-43e5-8230-4a46b8c71206\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAPGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:32.010",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.o.b.s.SqsMessageSenderAdapter.sendMessage(31)\u001b[0;39m - Message sent to Broker: bm-qrec-sqs-transaction ...\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAOGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.958",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.o.b.s.SqsMessageSenderAdapter.sendMessage(28)\u001b[0;39m - Sending message to Broker {\"documentNumber\":\"B#1#18124702\",\"transactionId\":\"06a11a1d-8aa2-4524-a1fa-2aa08f09e519\",\"type\":\"REVERSE_PAYMENT\",\"customerPaymentData\":{\"msgId\":\"aeb6be9f-e629-41b3-a63b-88b02c9ab637\",\"endToEndId\":\"06a11a1d-8aa2-4524-a1fa-2aa08f09e519\",\"creDtTm\":\"2025-05-08T17:50:23\",\"orgnlNbOfTxs\":\"1\",\"ctrlSum\":\"4000.00\"}}\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARANGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.958",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.s.CreditTransactionService.customerPaymentReverse(95)\u001b[0;39m - Ends customer payment reverse process ...\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAMGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.072",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.o.p.d.q.QrTransactionDynamoAdapter.queryCustomer(182)\u001b[0;39m - Start query customer with merchan id 988042768\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARALGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.072",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.s.CreditTransactionService.customerPaymentReverse(79)\u001b[0;39m - Start customer payment reverse process ...\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAKGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.070",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.CustomerPaymentReversalController.customerPaymentReversalCredit(38)\u001b[0;39m - This is the customer payment data reversal credit to send to queue co.com.bancamia.qr.accounts.application.ports.in.execute.DebitTransactionCommand@76122080\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAJGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.070",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.p.CustomerPaymentReversalValidatorFields.buildDataToSentToQueue(290)\u001b[0;39m - The Customer Payment Reversal object to sent to queue is as follows co.com.bancamia.qr.accounts.application.ports.in.execute.DebitTransactionCommand@76122080\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAIGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.070",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.p.CustomerPaymentReversalValidatorFields.buildDocumentNumber(296)\u001b[0;39m - The document number is as follows B#-#988042768\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAHGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.069",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.p.CustomerPaymentReversalValidatorFields.validatePmtTpInfFields(248)\u001b[0;39m - El reversal reason is as follows PAY\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAGGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.069",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.p.CustomerPaymentReversalValidatorFields.validatePmtTpInfFields(240)\u001b[0;39m - El reversal code is as follows P2M\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAFGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.069",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.p.CustomerPaymentReversalValidatorFields.validateOrgnlGrpInfFields(113)\u001b[0;39m - El reversal code is as follows NT46\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAEGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.069",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.p.CustomerPaymentReversalValidatorFields.validateBody(60)\u001b[0;39m - Start of field validation Customer Payment Reversal Body\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARADGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.069",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.p.CustomerPaymentReversalValidatorFields.processCustomerPaymentReversalCredit(37)\u001b[0;39m - Start to validate the CustomerPaymentReversalCredit body\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARACGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.067",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.CustomerPaymentReversalController.customerPaymentReversalCredit(28)\u001b[0;39m - Start CustomerPaymentReversalCredit PAIN007 {\"CstmrPmtRvsl\":{\"GrpHdr\":{\"MsgId\":\"69bfbd49-834c-4b58-9319-70451962fb9f\",\"CreDtTm\":\"2025-05-08T17:50:23.345\",\"NbOfTxs\":\"1\",\"CtrlSum\":\"4000.00\"},\"OrgnlGrpInf\":{\"OrgnlMsgId\":\"aeb6be9f-e629-41b3-a63b-88b02c9ab637\",\"OrgnlCreDtTm\":\"2025-05-08T17:50:23\",\"OrgnlMsgNmId\":\"pain001\",\"RvslRsnInf\":[{\"Rsn\":{\"Cd\":\"NT46\",\"Prtry\":\" Not Acceptable -- No se obtuvo respuesta Pain002 de Credito\"},\"AddtlInf\":\"000000\"}]},\"OrgnlPmtInfAndRvsl\":[{\"OrgnlPmtInfId\":\"17437920670358931623414355464408729\",\"TxInf\":[{\"OrgnlEndToEndId\":\"06a11a1d-8aa2-4524-a1fa-2aa08f09e519\",\"OrgnlTxRef\":{\"Cdtr\":{\"Pty\":{\"Id\":{\"OrgId\":{\"Othr\":[{\"Id\":\"988042768\"}]}},\"Nm\":\"ARCINIEGAS LOPEZ ARCINIEGAS LOPEZ\"}},\"CdtrAgt\":{\"FinInstnId\":{\"BICFI\":\"0059\"}},\"CdtrAcct\":{\"Ccy\":\"COP\",\"Id\":{\"Othr\":{\"Id\":\"352021006311855001\"}},\"Tp\":{\"Cd\":\"SVGS\"}},\"CdtrAgtAcct\":{\"Id\":{\"Othr\":{\"Id\":\"00590500\"}}},\"Dbtr\":{\"Pty\":{\"Nm\":\"IVAN RENE Q. P.\",\"Id\":{\"PrvtId\":{\"Othr\":[{\"Id\":\"1125413220\",\"SchmeNm\":{\"Cd\":\"CC\"}}]}}}},\"DbtrAgt\":{\"FinInstnId\":{\"BICFI\":\"0977\"}},\"PmtTpInf\":{\"CtgyPurp\":{\"Cd\":\"P2M\",\"Prtry\":\"PAY\"}}}}]}]}}\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARABGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:31.066",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "START RequestId: 06d25c3a-91e7-43e5-8230-4a46b8c71206 Version: $LATEST\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QASIOCMDt+fXqMhCX/bKR6zISNRoYAgZ65YCmAAAAAMsT1uYABoHTUfAAAANiIAEomr7fkOsyMMvF35DrMjgRQI0mSLk+UK0gGAAgARAAGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:29.023",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "END RequestId: 6fbd176e-0682-461b-aaad-676c692208bf\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QAyIOCMDt+fXqMhCX/bKR6zISNRoYAgZ4oxQRAAAAAVTW6sYABoHTUrAAAAISIAEo1Z3fkOsyMJ+u35DrMjgdQNlISPhYUPU+GAAgARAbGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:29.023",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "REPORT RequestId: 6fbd176e-0682-461b-aaad-676c692208bf\tDuration: 1361.59 ms\tBilled Duration: 2122 ms\tMemory Size: 1024 MB\tMax Memory Used: 178 MB\tInit Duration: 759.59 ms\t\nXRAY TraceId: 1-681d3531-564802af2620ed0625fbee2d\tSampled: true\t\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QAyIOCMDt+fXqMhCX/bKR6zISNRoYAgZ4oxQRAAAAAVTW6sYABoHTUrAAAAISIAEo1Z3fkOsyMJ+u35DrMjgdQNlISPhYUPU+GAAgARAcGAE="
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:29.020",
+      "@logStream": "2025/05/08/[$LATEST]6ecd3044dec3459db39c371217c3e42e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.o.b.s.SqsMessageSenderAdapter.sendMessage(31)\u001b[0;39m - Message sent to Broker: bm-qrec-sqs-transaction ...\n",
+      "@ptr": "Cn0KQAosMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXBpLXJlZGViYW4QAyIOCMDt+fXqMhCX/bKR6zISNRoYAgZ4oxQRAAAAAVTW6sYABoHTUrAAAAISIAEo1Z3fkOsyMJ+u35DrMjgdQNlISPhYUPU+GAAgARAaGAE="
+    }
+  ],
+  "/aws/lambda/bm-qrec-authorizer": [
+    {
+      "@timestamp": "2025-05-08 23:13:18.760",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:18.760Z\t04d75315-59df-4f95-8623-d6238b79778e\tINFO\tEnviando a atalla comando 32:  <32#2#1#9E864193FC4AA597#1PUNN000,75FADC49098A0E8688A7554E6D9ED544ADDFE107ECC919FA,12D0E815C976CCC2#0123456789593817#077114#0000010053100841#F#6#1V3NN000,AC53BAA4F2D2F07035EC5D8D1A1B675E4528A979A230713A,A7B8D3155513958F#010053100841#>\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEB8YAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:18.760",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:18.760Z\t04d75315-59df-4f95-8623-d6238b79778e\tINFO\tRespuesta comando 30:  <40#9E864193FC4AA597#>\r\n\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEB4YAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:16.758",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:16.758Z\t04d75315-59df-4f95-8623-d6238b79778e\tINFO\tEnviando a atalla comando 30:  <30#1PUNN000,75FADC49098A0E8688A7554E6D9ED544ADDFE107ECC919FA,12D0E815C976CCC2#842598#010053100841#>\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEB0YAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:16.651",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:16.651Z\t04d75315-59df-4f95-8623-d6238b79778e\tINFO\thashHex 97a2a121d3c4b1d76a495d88342b817acf601c451b03db960eaa17c43daddcbd\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBwYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:16.277",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:16.277Z\t04d75315-59df-4f95-8623-d6238b79778e\tINFO\tInicio consulta token oAuth: {\n  method: 'POST',\n  url: 'http://bm-prod-oauth-srv.us-east-1.elasticbeanstalk.com/uaa/oauth/check_token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkaXNwbGF5X2xhc3RfbmFtZSI6IkFicmlsIENvcnJlZG9yIiwidXNlcl9uYW1lIjoiMTUzMTAwODQxIiwidXBkYXRlX3VzZXJfZGF0YSI6ZmFsc2UsImxhc3RfbG9naW5fZGF0ZSI6IjA4LzA1LzIwMjUgMDg6MzgiLCJkaXNwbGF5X25hbWUiOiJMYWR5IE5hdGFsaWEiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiY2xpZW50X2lkIjoiZGVtbyIsImF1ZCI6WyJhcHAiLCJwb3J0YWwiXSwibXVzdF9jaGFuZ2VfcHdkIjpmYWxzZSwidGlwb19kb2MiOiIxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIiwidHJ1c3QiXSwiZXhwIjoxNzQ2NzQ4OTAzLCJqdGkiOiJjZmIxMTcxZC1hNDYxLTQzMzEtOGVkZC04ZDc4NzJkZmU3MTEiLCJudW1fZG9jIjoiNTMxMDA4NDEifQ.HtD6XmHx-k6uQnMihsRMSzU9NPw0mQHVsuh99fxtSlw',\n  headers: { Authorization: 'Basic ZGVtbzpzZWNyZXRfZGVtbw==' }\n}\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBsYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:16.228",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:16.228Z\t04d75315-59df-4f95-8623-d6238b79778e\tINFO\tIncoming Token Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkaXNwbGF5X2xhc3RfbmFtZSI6IkFicmlsIENvcnJlZG9yIiwidXNlcl9uYW1lIjoiMTUzMTAwODQxIiwidXBkYXRlX3VzZXJfZGF0YSI6ZmFsc2UsImxhc3RfbG9naW5fZGF0ZSI6IjA4LzA1LzIwMjUgMDg6MzgiLCJkaXNwbGF5X25hbWUiOiJMYWR5IE5hdGFsaWEiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiY2xpZW50X2lkIjoiZGVtbyIsImF1ZCI6WyJhcHAiLCJwb3J0YWwiXSwibXVzdF9jaGFuZ2VfcHdkIjpmYWxzZSwidGlwb19kb2MiOiIxIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIiwidHJ1c3QiXSwiZXhwIjoxNzQ2NzQ4OTAzLCJqdGkiOiJjZmIxMTcxZC1hNDYxLTQzMzEtOGVkZC04ZDc4NzJkZmU3MTEiLCJudW1fZG9jIjoiNTMxMDA4NDEifQ.HtD6XmHx-k6uQnMihsRMSzU9NPw0mQHVsuh99fxtSlw\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBoYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:16.228",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:16.228Z\t04d75315-59df-4f95-8623-d6238b79778e\tINFO\tPath: /qrec/transaction method: s#POST\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBkYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:16.227",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "START RequestId: 04d75315-59df-4f95-8623-d6238b79778e Version: $LATEST\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBgYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:14.360",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "END RequestId: f6c407d2-ad23-48c7-9878-c8abde555eda\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBYYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:14.360",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "REPORT RequestId: f6c407d2-ad23-48c7-9878-c8abde555eda\tDuration: 414.70 ms\tBilled Duration: 415 ms\tMemory Size: 256 MB\tMax Memory Used: 141 MB\t\nXRAY TraceId: 1-681d3a89-7d1003e12a8e362842719edb\tSampled: true\t\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBcYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:14.359",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:14.359Z\tf6c407d2-ad23-48c7-9878-c8abde555eda\tINFO\tContext  {\n  display_last_name: 'Garcia Ramirez',\n  user_name: '11073630485',\n  active: true,\n  display_name: 'Karen Yeraldin',\n  deviceDetails: 'samsung|SM-A556E|14',\n  endpointArn: 'arn:aws:sns:us-east-1:010540788541:endpoint/GCM/bancamovil-app-google-prod/07e741ce-2987-37f9-be14-27d70b7ca816',\n  documentType: '1',\n  documentNumber: '1073630485',\n  mobile: '3228796848',\n  platform: 'GCM',\n  countryCode: '+57',\n  simNumber: '5162131741701806448',\n  uniqueID: '4459f51f45da1b65'\n}\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBUYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:14.359",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:14.359Z\tf6c407d2-ad23-48c7-9878-c8abde555eda\tINFO\tresult for function: true\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBQYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:14.032",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:14.032Z\tf6c407d2-ad23-48c7-9878-c8abde555eda\tINFO\tInicio consulta token oAuth: {\n  method: 'POST',\n  url: 'http://bm-prod-oauth-srv.us-east-1.elasticbeanstalk.com/uaa/oauth/check_token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkaXNwbGF5X2xhc3RfbmFtZSI6IkdhcmNpYSBSYW1pcmV6IiwidXNlcl9uYW1lIjoiMTEwNzM2MzA0ODUiLCJ1cGRhdGVfdXNlcl9kYXRhIjpmYWxzZSwibGFzdF9sb2dpbl9kYXRlIjoiMDgvMDUvMjAyNSAxNzo1OCIsImRpc3BsYXlfbmFtZSI6IkthcmVuIFllcmFsZGluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImNsaWVudF9pZCI6ImRlbW8iLCJhdWQiOlsiYXBwIiwicG9ydGFsIl0sIm11c3RfY2hhbmdlX3B3ZCI6ZmFsc2UsInRpcG9fZG9jIjoiMSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSIsInRydXN0Il0sImV4cCI6MTc0Njc0ODU2NCwianRpIjoiYmIwZjFmNjgtOTZiOS00NzQyLWFhODgtMmIwNzZmYzkzNTgyIiwibnVtX2RvYyI6IjEwNzM2MzA0ODUifQ.LZz84WbhVtaV20DWg7111YYu35nn4nWizIi9W5xsCL0',\n  headers: { Authorization: 'Basic ZGVtbzpzZWNyZXRfZGVtbw==' }\n}\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBMYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:13.946",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:13.946Z\tf6c407d2-ad23-48c7-9878-c8abde555eda\tINFO\tIncoming Token Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkaXNwbGF5X2xhc3RfbmFtZSI6IkdhcmNpYSBSYW1pcmV6IiwidXNlcl9uYW1lIjoiMTEwNzM2MzA0ODUiLCJ1cGRhdGVfdXNlcl9kYXRhIjpmYWxzZSwibGFzdF9sb2dpbl9kYXRlIjoiMDgvMDUvMjAyNSAxNzo1OCIsImRpc3BsYXlfbmFtZSI6IkthcmVuIFllcmFsZGluIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImNsaWVudF9pZCI6ImRlbW8iLCJhdWQiOlsiYXBwIiwicG9ydGFsIl0sIm11c3RfY2hhbmdlX3B3ZCI6ZmFsc2UsInRpcG9fZG9jIjoiMSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSIsInRydXN0Il0sImV4cCI6MTc0Njc0ODU2NCwianRpIjoiYmIwZjFmNjgtOTZiOS00NzQyLWFhODgtMmIwNzZmYzkzNTgyIiwibnVtX2RvYyI6IjEwNzM2MzA0ODUifQ.LZz84WbhVtaV20DWg7111YYu35nn4nWizIi9W5xsCL0\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBIYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:13.946",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:13.946Z\tf6c407d2-ad23-48c7-9878-c8abde555eda\tINFO\tPath: /qrec/bonding/business method: s#GET\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBEYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:13.945",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "START RequestId: f6c407d2-ad23-48c7-9878-c8abde555eda Version: $LATEST\n",
+      "@ptr": "CnwKPworMDU4MjY0MzY5MjMwOi9hd3MvbGFtYmRhL2JtLXFyZWMtYXV0aG9yaXplchABIg4IwO359eoyEJf9spHrMhI1GhgCBn/4vWgAAAAAyXk1aAAGgdOjgAAAA4IgASjfwa2R6zIwvIyzkesyOCxA4XdI2XZQglYYACABEBAYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:04.129",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "END RequestId: 21193e28-4f39-4bd1-81e6-95155d850c1c\n",
+      "@ptr": "CoABCj8KKzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWF1dGhvcml6ZXIQBCIOCMDt+fXqMhCX/bKR6zISORoYAgZ4a42qAAAAAXRwRQYABoHTozAAAAaiIAEoye+ukesyML+wtJHrMjisAUDqywRI1q4BUPuYARgAIAEQcBgB"
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:04.129",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "REPORT RequestId: 21193e28-4f39-4bd1-81e6-95155d850c1c\tDuration: 376.16 ms\tBilled Duration: 377 ms\tMemory Size: 256 MB\tMax Memory Used: 141 MB\t\nXRAY TraceId: 1-681d3a7f-35c6b36a484174427ef27dec\tSampled: true\t\n",
+      "@ptr": "CoABCj8KKzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWF1dGhvcml6ZXIQBCIOCMDt+fXqMhCX/bKR6zISORoYAgZ4a42qAAAAAXRwRQYABoHTozAAAAaiIAEoye+ukesyML+wtJHrMjisAUDqywRI1q4BUPuYARgAIAEQcRgB"
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:04.128",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:04.128Z\t21193e28-4f39-4bd1-81e6-95155d850c1c\tINFO\tContext  {\n  display_last_name: 'Imbajoa Ortega',\n  user_name: '11004546768',\n  active: true,\n  display_name: 'Dayana Estefani',\n  deviceDetails: 'vivo|V2109|13',\n  endpointArn: 'arn:aws:sns:us-east-1:010540788541:endpoint/GCM/bancamovil-app-google-prod/39254ab3-1e3a-3d67-8474-ead6dd0ac26c',\n  documentType: '1',\n  documentNumber: '1004546768',\n  mobile: '3228649381',\n  platform: 'GCM',\n  countryCode: '+57',\n  simNumber: '2640441733837014378',\n  uniqueID: 'd7a8d0ebdfdcb079'\n}\n",
+      "@ptr": "CoABCj8KKzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWF1dGhvcml6ZXIQBCIOCMDt+fXqMhCX/bKR6zISORoYAgZ4a42qAAAAAXRwRQYABoHTozAAAAaiIAEoye+ukesyML+wtJHrMjisAUDqywRI1q4BUPuYARgAIAEQbxgB"
+    },
+    {
+      "@timestamp": "2025-05-08 23:13:04.128",
+      "@logStream": "2025/05/08/[$LATEST]5151752ccd3942b88ef2dd37eb579d17",
+      "@message": "2025-05-08T23:13:04.128Z\t21193e28-4f39-4bd1-81e6-95155d850c1c\tINFO\tresult for function: true\n",
+      "@ptr": "CoABCj8KKzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWF1dGhvcml6ZXIQBCIOCMDt+fXqMhCX/bKR6zISORoYAgZ4a42qAAAAAXRwRQYABoHTozAAAAaiIAEoye+ukesyML+wtJHrMjisAUDqywRI1q4BUPuYARgAIAEQbhgB"
+    }
+  ],
+  "/aws/lambda/bm-qrec-create-transaction": [
+    {
+      "@timestamp": "2025-05-08 22:44:00.370",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "REPORT RequestId: e5f9fe09-3157-41b3-acc6-e060719a5e43\tDuration: 730.30 ms\tBilled Duration: 1724 ms\tMemory Size: 1024 MB\tMax Memory Used: 158 MB\tInit Duration: 992.73 ms\t\nXRAY TraceId: 1-681d33a8-4dc00c5822f794b92a6bbfeb\tSampled: true\t\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABECcYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.370",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "END RequestId: e5f9fe09-3157-41b3-acc6-e060719a5e43\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABECYYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.368",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.s.TrxMonitorService.buildPlotPayments(40)\u001b[0;39m - Transactional monitoring execution end\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABECQYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.368",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.o.b.s.SqsMessageSenderAdapter.sendMessage(28)\u001b[0;39m - Message sent to broker bm-qrec-sqs-monitor...\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABECMYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.368",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[1;31mERROR\u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.StartTransactionLambdaHandler.buildResponseUtil(221)\u001b[0;39m - messageResponse: {\"messageCode\":\"bm-qrec-trx-0306\",\"message\":\"La dirección es requerida, por favor actualizar sus datos\",\"level\":\"ERROR\"}\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABECUYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.318",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.s.TrxMonitorService.buildPlotPayments(36)\u001b[0;39m - Message Body: Request sent to monitor {\"sourceDocType\":\"1\",\"sourceDocNumber\":\"1078750963\",\"targetDocType\":\"\",\"targetDocNumber\":\"\",\"customerId\":\"11078750963\",\"transactionCode\":\"bm0062\",\"responseCode\":\"400\",\"reverse\":\"N\",\"transactionDate\":\"\",\"transactionTime\":\"\",\"totalAmountTrx\":\"86000\",\"amountCash\":\"86000\",\"originAccountNumber\":\"604021247725650006\",\"debitCredit\":\"D\",\"signValue\":\"-\",\"geolocationIpCity\":\"Bogot￡\",\"terminalId\":\"000\",\"clientCodeOrigin\":\"1078750963\",\"clientCodeDestination\":\"\",\"userCode\":\"11078750963\",\"ipAddressIpCaller\":\"141.226.107.151, 10.31.8.225\",\"nameCustomerAccountOriginAccount\":\"Katerine Parra Garzon\",\"geolocationIpCountry\":\"Colombia\",\"transferReceivingOffice\":\"60\",\"userConfirm\":\"11078750963\",\"idDestinationClient\":\"\",\"brandModelDevice\":\"samsung SM-G781B\",\"isp\":\"CLARO\",\"osVersion\":\"11.0.0\",\"os\":\"Android\",\"uidd\":\"b3171d8b84b50635\",\"simCardId\":\"8008881720214599317\",\"deviceId\":\"b3171d8b84b50635\",\"mobileOperator\":\"CLARO\",\"modelDevice\":\"SM-G781B\",\"countryCode\":\"+57\"}\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABECIYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.s.BuilderRequestHelper.buildRedebanRequest(53)\u001b[0;39m - Start to buildRedebanRequest object ...\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBQYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at io.micronaut.function.aws.runtime.AbstractMicronautLambdaRuntime.startRuntimeApiEventLoop(AbstractMicronautLambdaRuntime.java:407)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEB0YAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at io.micronaut.function.aws.runtime.AbstractMicronautLambdaRuntime.run(AbstractMicronautLambdaRuntime.java:167)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEB4YAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at co.com.bancamia.qr.accounts.adapter.in.lambda.StartTransactionLambdaHandlerRuntime.main(StartTransactionLambdaHandlerRuntime.java:28)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEB8YAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at co.com.bancamia.qr.accounts.adapter.in.lambda.StartTransactionLambdaHandler.handleRequest(StartTransactionLambdaHandler.java:36)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBsYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.s.TrxMonitorService.buildPlotPayments(28)\u001b[0;39m - Transactional monitoring execution start\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABECEYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at io.micronaut.function.aws.runtime.AbstractMicronautLambdaRuntime.handleInvocationForRequestHandler(AbstractMicronautLambdaRuntime.java:445)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBwYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at java.base@21.0.6/java.lang.invoke.LambdaForm$DMH/sa346b79c.invokeStaticInit(LambdaForm$DMH)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABECAYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[1;31mERROR\u001b[0;39m \u001b[35mc.c.b.q.a.a.i.l.StartTransactionLambdaHandler.handleRequest(133)\u001b[0;39m - Custom Exception - La dirección es requerida, por favor actualizar sus datos - InternalReasonMessage: null ...\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBUYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at co.com.bancamia.qr.accounts.adapter.in.lambda.StartTransactionLambdaHandler.handleRequest(StartTransactionLambdaHandler.java:126)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBoYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at co.com.bancamia.qr.accounts.application.services.ExecuteTransactionService.initPaymentTransaction(ExecuteTransactionService.java:88)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBkYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at co.com.bancamia.qr.accounts.application.services.BuilderRequestHelper.buildRedebanRequest(BuilderRequestHelper.java:55)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBgYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "at co.com.bancamia.qr.accounts.application.services.BuilderRequestHelper.buildDebtor(BuilderRequestHelper.java:143)\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBcYAQ=="
+    },
+    {
+      "@timestamp": "2025-05-08 22:44:00.316",
+      "@logStream": "2025/05/08/[$LATEST]d24363c7c5634a32a4deba4d4307552c",
+      "@message": "co.com.bancamia.qr.accounts.application.exceptions.CreateTransactionException: La dirección es requerida, por favor actualizar sus datos\n",
+      "@ptr": "CoQBCkcKMzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWNyZWF0ZS10cmFuc2FjdGlvbhAFIg4IwO359eoyEJf9spHrMhI1GhgCBoFHQ/YAAAAA3p2VSQAGgdM5QAAAAGIgASi2xMeQ6zIw8tHHkOsyOChAg0xIjlVQgToYACABEBYYAQ=="
+    }
+  ],
+  "/aws/lambda/bm-qrec-do-transaction": [
+    {
+      "@timestamp": "2025-05-08 22:50:41.950",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "REPORT RequestId: 92c74a15-9dd0-55d3-adec-2a82aaa123f7\tDuration: 12884.98 ms\tBilled Duration: 12885 ms\tMemory Size: 1024 MB\tMax Memory Used: 178 MB\t\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQShgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.950",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "END RequestId: 92c74a15-9dd0-55d3-adec-2a82aaa123f7\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQSRgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at io.micronaut.function.aws.runtime.AbstractMicronautLambdaRuntime.handleInvocationForRequestHandler(AbstractMicronautLambdaRuntime.java:445)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQRBgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at io.micronaut.function.aws.runtime.AbstractMicronautLambdaRuntime.startRuntimeApiEventLoop(AbstractMicronautLambdaRuntime.java:407)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQRRgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at io.micronaut.function.aws.runtime.AbstractMicronautLambdaRuntime.run(AbstractMicronautLambdaRuntime.java:167)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQRhgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at co.com.bancamia.qr.accounts.adapter.in.lambda.LambdaHandlerRuntime.main(LambdaHandlerRuntime.java:37)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQRxgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at java.base@21.0.6/java.lang.invoke.LambdaForm$DMH/sa346b79c.invokeStaticInit(LambdaForm$DMH)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQSBgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.o.b.s.SqsMessageSenderAdapter.sendMessage(73)\u001b[0;39m - Message sent to broker bm-qrec-sqs-notification ...\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQNRgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[34mINFO \u001b[0;39m \u001b[35mc.c.b.q.a.a.s.TrxMonitorService.buildPlotPayments(26)\u001b[0;39m - Transactional monitoring execution start\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQNhgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "\u001b[1;30m[main]\u001b[0;39m \u001b[1;31mERROR\u001b[0;39m \u001b[35mc.c.b.q.a.a.s.TrxMonitorService.buildPlotPayments(41)\u001b[0;39m - argument \"content\" is null\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQNxgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "java.lang.IllegalArgumentException: argument \"content\" is null\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQOBgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at com.fasterxml.jackson.databind.ObjectMapper._assertNotNull(ObjectMapper.java:5054)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQORgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3813)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQOhgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at co.com.bancamia.libs.qr.mapper.StaticBuilder.readObject(StaticBuilder.java:44)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQOxgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at co.com.bancamia.qr.accounts.application.services.TrxMonitorService.getTrxMonitorRequest(TrxMonitorService.java:55)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQPBgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at co.com.bancamia.qr.accounts.application.services.TrxMonitorService.buildPlotPayments(TrxMonitorService.java:30)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQPRgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at co.com.bancamia.qr.accounts.application.services.ExecuteCreditService.processBusinessCredit(ExecuteCreditService.java:75)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQPhgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at co.com.bancamia.qr.accounts.adapter.in.lambda.DoTransactionHandler.processMessage(DoTransactionHandler.java:98)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQPxgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at co.com.bancamia.qr.accounts.adapter.in.lambda.DoTransactionHandler.lambda$handleRequest$0(DoTransactionHandler.java:65)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQQBgB"
+    },
+    {
+      "@timestamp": "2025-05-08 22:50:41.947",
+      "@logStream": "2025/05/08/[$LATEST]7260ee8e86c2424ea86e81b2c9e60b9e",
+      "@message": "at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)\n",
+      "@ptr": "CoABCkMKLzA1ODI2NDM2OTIzMDovYXdzL2xhbWJkYS9ibS1xcmVjLWRvLXRyYW5zYWN0aW9uEAAiDgjA7fn16jIQl/2ykesyEjUaGAIGfJVqLAAAAACArfZPAAaB01HQAAAEwiABKNiR4JDrMjCek+CQ6zI4S0DUW0itQ1CwLRgAIAEQQRgB"
+    }
+  ]
+}
