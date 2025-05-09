@@ -38,7 +38,7 @@ LOG_GROUPS: List[str] = [
 QUERY_STRING = """
 fields @timestamp, @logStream, @message
 | sort @timestamp desc
-| limit 20
+| limit 1000
 """
 # ----------------------------------- #
 
