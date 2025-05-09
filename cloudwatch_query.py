@@ -3,7 +3,7 @@
 cloudwatch_query.py
 
 Requisitos:
-    pip install boto3
+    pip install boto3 tabulate
 
 Uso:
   python cloudwatch_query.py <fecha_ini> <hora_ini> [<fecha_fin> <hora_fin>] [--out <archivo>]
@@ -86,7 +86,7 @@ def pretty_print(rows: list):
     try:
         from tabulate import tabulate
 
-        print(tabulate(rows, headers="keys", tablefmt="github"))
+        #print(tabulate(rows, headers="keys", tablefmt="github"))
     except ImportError:
         print(json.dumps(rows, indent=2, ensure_ascii=False))
 
