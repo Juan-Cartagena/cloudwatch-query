@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 """
-cloudwatch_query.py  (hora local de Colombia)
+cloudwatch_query.py
+
+Requisitos:
+    pip install boto3 tabulate
 
 Uso:
   python cloudwatch_query.py <fecha_ini> <hora_ini> [<fecha_fin> <hora_fin>] [--out <archivo>]
+  python cloudwatch_query.py 2025-05-08 07:14 --out a.json
 
 Ejemplos:
   python cloudwatch_query.py 2025-05-08 07:14
   python cloudwatch_query.py 2025-05-08 07:14 2025-05-08 08:00 --out logs.json
+  python cloudwatch_query.py 2025-05-08 07:14 --out resultado.csv
 """
 
 import argparse
@@ -22,20 +27,7 @@ from typing import Dict, List
 import boto3
 from botocore.exceptions import ClientError
 
-# ───────── 1.  ZONA HORARIA DE COLOMBIA ────────── #
-try:
-    from zoneinfo import ZoneInfo          #  Python 3.9+
-except ImportError:                         #  Python 3.8 o anterior
-    from pytz import timezone as _tz        #  pip install pytz
-    class ZoneInfo:                         #  envoltorio mínimo
-        def __init__(self, name): self._tz = _tz(name)
-        def utcoffset(self, dt):  return self._tz.utcoffset(dt)
-        def dst(self, dt):        return self._tz.dst(dt)
-        def tzname(self, dt):     return self._tz.tzname(dt)
-CO_TZ = ZoneInfo("America/Bogota")
-# ──────────────────────────────────────────────── #
-
-# -------- Configuración de log groups y query -------- #
+# ---------- Configuración ---------- #
 LOG_GROUPS: List[str] = [
     "/aws/lambda/bm-qrec-api-redeban",
     "/aws/lambda/bm-qrec-authorizer",
@@ -48,27 +40,17 @@ fields @timestamp, @logStream, @message
 | sort @timestamp desc
 | limit 20
 """
-# ----------------------------------------------------- #
+# ----------------------------------- #
 
 logs = boto3.client("logs")
 
 
-# ---------- Utilidades de fecha/hora ---------- #
+def to_epoch(dt: datetime) -> int:
+    return int(dt.replace(tzinfo=timezone.utc).timestamp())
+
+
 def parse_cli_time(date_str: str, time_str: str) -> datetime:
-    """
-    Convierte 'YYYY-MM-DD' 'HH:MM' a datetime con zona America/Bogota.
-    """
-    naive = datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
-    return naive.replace(tzinfo=CO_TZ)
-
-
-def to_epoch_seconds(dt_local: datetime) -> int:
-    """
-    Pasa un datetime zonado en America/Bogota a epoch segundos UTC,
-    que es lo que exige el API de CloudWatch Logs.
-    """
-    return int(dt_local.astimezone(timezone.utc).timestamp())
-# ---------------------------------------------- #
+    return datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M:%S")
 
 
 def start_query(log_group: str, start_ts: int, end_ts: int) -> str:
@@ -93,24 +75,8 @@ def wait_results(query_id: str, poll_interval: float = 1.0) -> list:
 
 
 def flatten(results: list) -> list:
-    """
-    Convierte el formato devuelto por get_query_results a lista de dicts
-    y transforma el campo @timestamp a string local (America/Bogota).
-    """
-    filas = []
-    for row in results:
-        d = {}
-        for cell in row:
-            field, value = cell["field"], cell["value"]
-            if field == "@timestamp":
-                # CloudWatch devuelve epoch-ms → int → datetime UTC
-                ts_ms = int(value)
-                dt_utc = datetime.fromtimestamp(ts_ms / 1000, tz=timezone.utc)
-                dt_local = dt_utc.astimezone(CO_TZ)
-                value = dt_local.strftime("%Y-%m-%d %H:%M:%S")
-            d[field] = value
-        filas.append(d)
-    return filas
+    """Convierte los resultados de AWS a lista de diccionarios."""
+    return [{c["field"]: c["value"] for c in row} for row in results]
 
 
 def pretty_print(rows: list):
@@ -119,63 +85,77 @@ def pretty_print(rows: list):
         return
     try:
         from tabulate import tabulate
-        print(tabulate(rows, headers="keys", tablefmt="github"))
+
+        #print(tabulate(rows, headers="keys", tablefmt="github"))
     except ImportError:
         print(json.dumps(rows, indent=2, ensure_ascii=False))
 
 
-# -------------- Guardar a archivo ---------------- #
+# -------------- LÓGICA DE GRABADO --------------- #
 def save_results(data: Dict[str, List[dict]], file_path: Path):
     """
-    Guarda los resultados en JSON o CSV según la extensión del nombre.
+    Guarda los resultados en file_path.
+    El formato se decide por la extensión:
+       .json  -> JSON
+       .csv   -> CSV (un CSV por log group concatenado; se añade 'log_group')
     """
     suffix = file_path.suffix.lower()
+
     if suffix == ".json":
         with file_path.open("w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"Resultados guardados en {file_path.resolve()} (JSON).")
 
     elif suffix == ".csv":
+        # Detectar campos máximos presentes
         all_rows = []
         for lg, rows in data.items():
             for r in rows:
                 r = r.copy()
                 r["log_group"] = lg
                 all_rows.append(r)
+
         if not all_rows:
             print("No hay datos para guardar en CSV.")
             return
-        fieldnames = sorted({k for row in all_rows for k in row})
+
+        # Determinar todas las columnas existentes
+        fieldnames = sorted({k for row in all_rows for k in row.keys()})
         with file_path.open("w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(all_rows)
         print(f"Resultados guardados en {file_path.resolve()} (CSV).")
+
     else:
-        print(f"Extensión {suffix} no soportada → usa .json o .csv")
-# --------------------------------------------------- #
+        print(f"Extensión {suffix} no soportada. Usa .json o .csv")
+# ------------------------------------------------- #
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(description="Consulta varios log groups de CloudWatch (hora Colombia).")
+    p = argparse.ArgumentParser(description="Consulta varios log groups de CloudWatch.")
     p.add_argument("fecha_ini", help="YYYY-MM-DD")
-    p.add_argument("hora_ini", help="HH:MM")
+    p.add_argument("hora_ini", help="HH:MM:SS")
     p.add_argument("fecha_fin", nargs="?", help="YYYY-MM-DD")
-    p.add_argument("hora_fin", nargs="?", help="HH:MM")
-    p.add_argument("--out", metavar="archivo", help="Fichero de salida (.json o .csv)")
+    p.add_argument("hora_fin", nargs="?", help="HH:MM:SS")
+    p.add_argument(
+        "--out",
+        metavar="archivo",
+        help="Ruta de salida (.json o .csv). Si no se especifica, solo imprime.",
+    )
     return p
 
 
 def main():
     args = build_arg_parser().parse_args()
 
-    # --- Parseo de fechas ---
     try:
         start_dt = parse_cli_time(args.fecha_ini, args.hora_ini)
-        if args.fecha_fin and args.hora_fin:
-            end_dt = parse_cli_time(args.fecha_fin, args.hora_fin)
-        else:
-            end_dt = datetime.now(CO_TZ)
+        end_dt = (
+            parse_cli_time(args.fecha_fin, args.hora_fin)
+            if args.fecha_fin and args.hora_fin
+            else datetime.now()
+        )
     except ValueError:
         print("Error en el formato de fecha/hora. Usa YYYY-MM-DD HH:MM")
         sys.exit(1)
@@ -184,12 +164,10 @@ def main():
         print("La fecha de inicio debe ser anterior a la final.")
         sys.exit(1)
 
-    start_ts = to_epoch_seconds(start_dt)
-    end_ts = to_epoch_seconds(end_dt)
+    start_ts, end_ts = map(to_epoch, (start_dt, end_dt))
+    print(f"Ejecutando consulta entre {start_dt} y {end_dt}...\n")
 
-    print(f"Ejecutando consulta entre {start_dt} y {end_dt} (hora Colombia)…\n")
-
-    resultados: Dict[str, List[dict]] = {}
+    salida_total: Dict[str, List[dict]] = {}
 
     for lg in LOG_GROUPS:
         print(f"===> Log group: {lg}")
@@ -197,13 +175,14 @@ def main():
             qid = start_query(lg, start_ts, end_ts)
             rows = flatten(wait_results(qid))
             pretty_print(rows)
-            resultados[lg] = rows
+            salida_total[lg] = rows
         except ClientError as e:
             print(f"Error consultando {lg}: {e}")
         print()
 
+    # Guardar si corresponde
     if args.out:
-        save_results(resultados, Path(args.out))
+        save_results(salida_total, Path(args.out))
 
 
 if __name__ == "__main__":
