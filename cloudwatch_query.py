@@ -11,7 +11,7 @@ Uso:
 
 Ejemplos:
   python cloudwatch_query.py 2025-05-08 07:14
-  python cloudwatch_query.py 2025-05-08 07:14 2025-05-08 08:00 --out logs.json
+  python cloudwatch_query.py 2025-05-07 23:11:37 2025-05-07 23:11:47 --out a.json
   python cloudwatch_query.py 2025-05-08 07:14 --out resultado.csv
 """
 
