@@ -20,7 +20,7 @@ import csv
 import json
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Dict, List
 
@@ -150,9 +150,9 @@ def main():
     args = build_arg_parser().parse_args()
 
     try:
-        start_dt = parse_cli_time(args.fecha_ini, args.hora_ini)
+        start_dt = parse_cli_time(args.fecha_ini, args.hora_ini) + timedelta(hours=5)
         end_dt = (
-            parse_cli_time(args.fecha_fin, args.hora_fin)
+            parse_cli_time(args.fecha_fin, args.hora_fin) + timedelta(hours=5)
             if args.fecha_fin and args.hora_fin
             else datetime.now()
         )
