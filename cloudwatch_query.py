@@ -7,6 +7,7 @@ Requisitos:
 
 Uso:
   python cloudwatch_query.py <fecha_ini> <hora_ini> [<fecha_fin> <hora_fin>] [--out <archivo>]
+  python cloudwatch_query.py 2025-05-08 07:14 --out a.json
 
 Ejemplos:
   python cloudwatch_query.py 2025-05-08 07:14
